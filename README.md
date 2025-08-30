@@ -101,6 +101,12 @@ MovieHouse/
 - Favorites and ratings are stored per browser (localStorage).
 - No user authentication or backend (unless you add a proxy as above).
 
+## Important Note on API Key Security
+To keep your TMDb API key secure, do not hardcode it directly into your JavaScript files that run in the browser. Instead, use one of the following methods:
+1. **Local Development**: Store the API key in a separate `apiKey.js` file that is included in `.gitignore` so it is not pushed to version control. Load this file before your main scripts in your HTML files.
+2. **Production Hosting**: Use environment variables and a backend proxy (e.g., serverless function) to keep the API key secret, as described above for Vercel.
+
+
 ## Credits
 
 - Movie data, images, genres, and trailers: [TMDb](https://www.themoviedb.org/)
@@ -113,3 +119,5 @@ MIT License
 ---
 
 Enjoy browsing and rating movies with NetChill Movie House!
+
+Made with 💖 by **Providence Oduok, JavaScript Trainer**👩‍💻 for Fhenix Africa TechCamp 2025 👩‍💻
